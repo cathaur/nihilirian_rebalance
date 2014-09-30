@@ -1,0 +1,21 @@
+This is a modification of the original Nihilirian techtree,
+for the purpose of making balance and other minor changes to the xml.
+
+To set up this repository on your machine:
+
+You probably want to put it in your megaglest techs directory:
+$ cd ~/.megaglest/techs/
+
+Then clone this repository:
+$ git clone https://github.com/cathaur/nihilirian_rebalance.git
+
+Or you can put it somewhere else and make a symlink at
+  ~/.megaglest/techs/nihilirian_rebalance .
+
+Since this repository contains only text files, you will need to copy
+the original Nihilirian assets over:
+Assuming you have the original Nihilirian techtree at
+  ~/.megaglest/techs/nihilirian, then:
+$ cd ~/.megaglest/techs/nihilirian_rebalance
+$ cp -nR ../nihilirian/* ./
+$ rm nihilirian.xml
