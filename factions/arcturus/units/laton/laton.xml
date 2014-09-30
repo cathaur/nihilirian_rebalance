@@ -1,0 +1,382 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="150" regeneration="1"/>
+		<max-ep value="12"   regeneration="2"/>
+		<armor value="1"/>
+		<armor-type value="toughskin"/>					
+		<sight value="7"/>
+		<time value="45"/>
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="30"/>
+			<resource name="wood" amount="30"/>
+		        <resource name="souls" amount="1"/>		
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/head.bmp"/>
+		<image-cancel path="../laton/icons/cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/select1.wav"/>
+			<sound path="sounds/select2.wav"/>
+			<sound path="sounds/select3.wav"/>				
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/act1.wav"/>
+			<sound path="sounds/act2.wav"/>
+			<sound path="sounds/act3.wav"/>
+			<sound path="sounds/act4.wav"/>
+			<sound path="sounds/act5.wav"/>
+		</command-sounds>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="65"/>
+			<animation path="models/laton_still.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="70"/>
+			<animation path="models/laton_carry.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="70"/>
+			<animation path="models/laton_carry.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="200"/>
+			<anim-speed value="125"/>
+			<animation path="models/laton_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="300"/>
+			<animation path="models/laton_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_gold_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="210"/>
+			<anim-speed value="125"/>
+			<animation path="models/laton_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="125"/>
+			<animation path="models/laton_carry.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="190"/>
+			<anim-speed value="300"/>
+			<animation path="models/laton_carry.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+				<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="2"/>
+			<speed value="80"/>
+			<anim-speed value="80"/>
+			<animation path="models/laton_attack.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+				<sound-file path="/sounds/attack4.wav"/>
+			 
+			</sound>
+			<attack-strenght value="20"/>
+			<attack-var value="2"/>
+			<attack-range value="2"/>
+			<attack-type value="forcefield"/>
+			<attack-start-time value="0.5"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="false"/>
+
+			<splash value="true">
+				<radius value="0"/>
+			 	<damage-all value="false"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+		
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="100"/>
+			<animation path="models/laton_build.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/build.wav"/>
+
+			</sound>
+		</skill>	
+
+
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="150"/>
+			<animation path="models/laton_build.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/build.wav"/>
+
+			</sound>
+		</skill>
+
+
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="mine_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="225"/>
+			<anim-speed value="90"/>
+			<animation path="models/laton_harvest.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/mine.wav"/>
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="harvest_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="90"/>
+			<animation path="models/laton_harvest.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/harvest.wav"/>
+			</sound>
+		</skill>		
+
+ 	
+		
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="30"/>
+			<anim-speed value="10"/>
+			<animation path="models/laton_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/die1.wav"/>
+				<sound-file path="sounds/die2.wav"/>							
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../laton/icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../laton/icons/walk.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value= "build"/>
+			<name value="build"/>
+			<image path="../laton/icons/build.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				 
+				<building name="brae"/>
+				<building name="vivitroon"/>
+				<building name="saarla"/>
+				<building name="evoble"/>
+				<building name="spirineal"/>
+				<building name="experolant"/>
+			
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="sounds/build.wav"/>	
+			</built-sound>	
+		</command>
+
+
+		
+		<command>
+			<type value= "build"/>
+			<name value="defences"/>
+			<image path="../laton/icons/build_def.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="tral"/>	
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+				<sound-file path="sounds/build.wav"/>
+										
+			</built-sound>	
+		</command>
+		<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="../laton/icons/repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="brae"/>		
+				<unit name="vivitroon"/>						
+				<unit name="saarla"/>		
+				<unit name="evoble"/>						
+				<unit name="spirineal"/>
+                                <unit name="experolant"/>
+				<unit name="tral"/>
+						
+			</repaired-units>		
+		</command>
+
+		<command>
+			<type value="harvest"/>
+			<name value="mine"/>
+			<image path="../laton/icons/repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_gold_skill"/>
+			<harvest-skill value="mine_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>
+				<resource name="gold"/>	
+				<resource name="stone"/>									</harvested-resources>
+			<max-load value="20"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+
+ 			 		
+		 
+ 
+
+		<command>
+			<type value="harvest"/>
+			<name value="harvest"/>
+			<image path="../laton/icons/harvest.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_gold_skill"/>
+			<harvest-skill value="harvest_wood_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>											
+				<resource name="wood"/>			
+			</harvested-resources>
+			<max-load value="20"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+		
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../laton/icons/attack_magic.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../laton/icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>

@@ -1,0 +1,398 @@
+<?xml version="1.0" standalone="no"?>
+
+<unit>
+
+	<!-- *** parameters *** -->
+
+	<parameters>
+		<size value="1"/>
+		<height value="2"/>
+		<max-hp value="230" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="1"/>
+		<armor-type value="carapace"/>					
+		<sight value="6"/>
+		<time value="65"/>	
+		<multi-selection value="true"/>	
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>	
+		<properties/>
+		<light enabled="false"/>
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="gold" amount="45"/>
+			<resource name="stone" amount="15"/>
+			<resource name="souls" amount="1"/>	
+		</resource-requirements>
+		<resources-stored/>
+		<image path="images/head.bmp"/>
+		<image-cancel path="../lerod/icons/cancel.bmp"/>
+		<meeting-point value="false"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/select1.wav"/>
+			<sound path="sounds/select2.wav"/>
+			<sound path="sounds/select3.wav"/>
+			<sound path="sounds/select4.wav"/>
+				
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/act1.wav"/>
+			<sound path="sounds/act2.wav"/>
+			<sound path="sounds/act3.wav"/>
+			<sound path="sounds/act4.wav"/>
+			<sound path="sounds/act5.wav"/>
+			<sound path="sounds/act6.wav"/>
+					
+		</command-sounds>
+	</parameters>
+
+
+	<!-- *** skills *** -->
+
+	<skills>
+	
+		<skill>
+			<type value="stop"/>
+			<name value="stop_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="1000"/>
+			<anim-speed value="120"/>
+			<animation path="models/lerod_still.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="80"/>
+			<animation path="models/lerod_stop_carrz.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop"/>
+			<name value="stop_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="75"/>
+			<anim-speed value="80"/>
+			<animation path="models/lerod_stop_carrz.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="125"/>
+			<animation path="models/lerod_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="125"/>
+			<animation path="models/lerod_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_gold_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="220"/>
+			<anim-speed value="125"/>
+			<animation path="models/lerod_walk.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="110"/>
+			<animation path="models/lerod_walk_carrz.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="move"/>
+			<name value="move_loaded_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="180"/>
+			<anim-speed value="110"/>
+			<animation path="models/lerod_walk_carrz.g3d"/>
+			<sound enabled="false"/>
+		</skill>
+		
+				<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="115"/>
+			<animation path="models/lerod_attack.g3d"/>
+			<sound enabled="true" start-time="0.7">
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+			 
+			</sound>
+			<attack-strenght value="15"/>
+			<attack-var value="1"/>
+			<attack-range value="2"/>
+			<attack-type value="blades"/>
+			<attack-start-time value="0.7"/>
+			<attack-fields>
+				<field value="land"/>
+				 
+			</attack-fields>
+			<projectile value="false"/>
+
+			<splash value="true">
+				<radius value="0"/>
+			 	<damage-all value="false"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+		
+		<skill>
+			<type value="build"/>
+			<name value="build_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="150"/>
+			<animation path="models/lerod_attack.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="mine_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="models/lerod_stone.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/grind1.wav"/>
+				<sound-file path="sounds/grind2.wav"/>
+			</sound>
+		</skill>	
+		
+		<skill>
+			<type value="harvest"/>
+			<name value="harvest_wood_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="150"/>
+			<anim-speed value="150"/>
+			<animation path="models/lerod_wood.g3d"/>
+			<sound enabled="true" start-time="0.5">
+				<sound-file path="sounds/wood1.wav"/>
+				<sound-file path="sounds/wood2.wav"/>
+			</sound>
+		</skill>		
+				
+		
+		<skill>
+			<type value="repair"/>
+			<name value="repair_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="350"/>
+			<anim-speed value="150"/>
+			<animation path="models/lerod_attack.g3d"/>
+			<sound enabled="true" start-time="0.3">
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+
+			</sound>
+		</skill>
+
+
+		<skill>
+			<type value="die"/>
+			<name value="die_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="30"/>
+			<anim-speed value="10"/>
+			<animation path="models/lerod_die.g3d"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/die1.wav"/>							
+			</sound>			
+			<fade value="false"/>
+		</skill>						
+
+	</skills>
+
+	<!-- *** commands *** -->
+	
+	<commands>
+		
+		<command>
+			<type value= "stop"/>
+			<name value="stop"/>
+			<image path="../lerod/icons/stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+
+		<command>
+			<type value= "move"/>
+			<name value="move"/>
+			<image path="../lerod/icons/move.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+		</command>
+
+		<command>
+			<type value= "build"/>
+			<name value="build"/>
+			<image path="../lerod/icons/build.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="tonit"/>
+				<building name="cheycalbie"/>
+				<building name="sborr"/>
+				<building name="sufotiilius"/>
+				<building name="fulemesil"/>
+				<building name="ambroyaer"/>			
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+ 
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+ 	
+			</built-sound>	
+		</command>
+		
+
+
+
+		<command>
+			<type value= "build"/>
+			<name value="defences"/>
+			<image path="../lerod/icons/build_defence.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<build-skill value="build_skill"/>
+			<buildings>
+				<building name="asparenium"/>	
+		 			
+			</buildings>
+			<start-sound enabled="false"/>
+			<built-sound enabled="true">
+
+				<sound-file path="/sounds/attack1.wav"/>
+				<sound-file path="/sounds/attack2.wav"/>
+				<sound-file path="/sounds/attack3.wav"/>
+ 	
+										
+			</built-sound>	
+		</command>
+
+			<command>
+			<type value="repair"/>
+			<name value="repair"/>
+			<image path="../lerod/icons/repair.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<repair-skill value="repair_skill"/>
+			<repaired-units>
+				<unit name="tonit"/>		
+				<unit name="cheycalbie"/>						
+				<unit name="sborr"/>		
+				<unit name="sufotiilius"/>				
+				<unit name="fulemesil"/>
+                                <unit name="ambroyaer"/>
+				<unit name="asparenium"/>							
+			</repaired-units>		
+		</command>
+             
+
+		<command>
+			<type value="harvest"/>
+			<name value="mine"/>
+			<image path="../lerod/icons/mine.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_gold_skill"/>
+			<harvest-skill value="mine_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>
+				<resource name="gold"/>	
+				<resource name="stone"/>								
+			</harvested-resources>
+			<max-load value="25"/>
+			<hits-per-unit value="1"/>				
+		</command>
+
+
+ 			 		
+		 
+ 
+
+		<command>
+			<type value="harvest"/>
+			<name value="harvest"/>
+			<image path="../lerod/icons/harvest.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_gold_skill"/>
+			<harvest-skill value="harvest_wood_skill"/>
+			<stop-loaded-skill value="stop_loaded_skill"/>
+			<move-loaded-skill value="move_loaded_skill"/>
+			<harvested-resources>											
+				<resource name="wood"/>			
+			</harvested-resources>
+			<max-load value="25"/>
+			<hits-per-unit value="1"/>				
+		</command>
+ 	
+		
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="../lerod/icons/attack_hammer.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="../lerod/icons/hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+
+	</commands>
+</unit>

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>		<resource name="souls" amount="3"/>
+		<resource name="gold" amount="110"/>
+		<resource name="wood" amount="110"/>	
+		<resource name="stone" amount="110"/>
+	
+	</starting-resources>
+	<starting-units>		
+		<unit name="brae" amount="1"/>
+		<unit name="vivitroon" amount="0"/>
+		<unit name="saarla" amount="0"/>
+		<unit name="evoble" amount="0"/>
+		<unit name="spirineal" amount="0"/>
+		<unit name="tral" amount="0"/>
+		<unit name="experolant" amount="0"/>
+
+		<unit name="laton" amount="3"/>		
+		<unit name="hedhroodar" amount="0"/>
+		<unit name="automacer" amount="0"/>
+		<unit name="lit" amount="0"/>
+		<unit name="reinaraa" amount="0"/>
+		<unit name="atomica" amount="0"/>
+		<unit name="spiritea" amount="0"/>
+		
+		
+	</starting-units>	
+	<music value="true" path="music/main.ogg"/>
+</faction>

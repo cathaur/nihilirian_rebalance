@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<projectile-particle-system>
+    	<texture value="true" path="images/battlemage_particle.bmp" luminance="true"/>
+    	<model value="false"/>
+	<primitive value="quad"/>
+	<offset x="0" y="0.63" z="0.7"/>
+	<color red="0.0" green="0.3" blue="1.0" alpha="0.5" />
+	<color-no-energy red="0.0" green="1" blue="0.7" alpha="0.0" />
+    	<size value="0.7" />
+    	<size-no-energy value="0.1" />
+    	<speed value="5" />
+	<gravity value="0.5"/>
+    	<emission-rate value="20" />
+    	<energy-max value="10" />
+    	<energy-var value="3" />
+	
+	<trajectory type="parabolic">
+		<speed value="30.0"/>
+		<scale value="1.0"/>
+	</trajectory>
+</projectile-particle-system>

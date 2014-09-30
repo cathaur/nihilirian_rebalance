@@ -1,0 +1,132 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<max-hp value="7500" regeneration="2"/>
+		<max-ep value="0" />
+		<armor value="5" />
+		<armor-type value="organic"/>				
+		<sight value="10" />
+		<time value="600" />
+		<multi-selection value="false" />
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="210"/>
+			<resource name="stone" amount="310"/>
+			<resource name="wood" amount="410"/>
+			
+		</resource-requirements>
+		<resources-stored>
+			<resource name="souls" amount="-1000"/>
+			<resource name= "gold" amount="5000"/>
+			<resource name= "wood" amount="5000"/>				
+			<resource name= "stone" amount="5000"/>
+									
+		</resources-stored>
+		<image path="images/head.bmp"/>
+		<image-cancel path="../laton/icons/cancel.bmp"/>
+		<meeting-point value="true" image-path="../laton/icons/meeting.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/sel.wav" />
+		</selection-sounds>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+	
+	     <skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="models/brae_upgrade.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="350" />
+			<anim-speed value="30" />
+			<animation path="models/brae_still.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="150" />
+			<animation path="construction/construct.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="350" />
+			<anim-speed value="200" />
+			<animation path="models/brae_producing.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="30" />
+			<anim-speed value="10" />
+			<animation path="models/brae_dead.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../brae/sounds/fall1.wav"/>
+				<sound-file path="../brae/sounds/fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="laton" />
+			<image path="../laton/images/head.bmp"/>
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="laton"/>
+		</command>	
+
+ 		<command>
+			<type value="upgrade"/>
+			<name value="smart_plazma" />
+			<image path="../../upgrades/smart_plazma/images/icon.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="smart_plazma"/>
+		</command>
+ 
+
+
+	</commands>
+</unit>

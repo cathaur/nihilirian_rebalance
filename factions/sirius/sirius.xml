@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="souls" amount="3"/>
+		<resource name="gold" amount="110"/>
+		<resource name="wood" amount="110"/>	
+		<resource name="stone" amount="110"/>
+			
+	</starting-resources>
+	<starting-units>		
+		<unit name="tonit" amount="1"/>
+		<unit name="ambroyaer" amount="0"/>
+		<unit name="cheycalbie" amount="0"/>
+		<unit name="sborr" amount="0"/>
+		<unit name="sufotiilius" amount="0"/>
+		<unit name="fulemesil" amount="0"/>
+		<unit name="asparenium" amount="0"/>
+
+		<unit name="lerod" amount="3"/>		
+		<unit name="ordantte" amount="0"/>
+		<unit name="atir" amount="0"/>
+		<unit name="wragoot" amount="0"/>
+		<unit name="qamesai" amount="0"/>
+		<unit name="dreadh" amount="0"/>
+		<unit name="slir" amount="0"/>
+		
+	</starting-units>	
+	<music value="true" path="music/main.ogg"/>
+</faction>

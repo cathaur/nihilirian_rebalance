@@ -1,0 +1,121 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="3" />
+		<height value="2" />
+		<max-hp value="6500" regeneration="0"/>
+		<max-ep value="0" />
+		<armor value="3" />
+		<armor-type value="alloy"/>				
+		<sight value="11" />
+		<time value="700" />
+		<multi-selection value="false" />
+		<cellmap value="false"/>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="510"/>
+			<resource name="stone" amount="110"/>
+			<resource name="wood" amount="210"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="5000"/>
+			<resource name= "wood" amount="5000"/>				
+			<resource name= "stone" amount="5000"/>
+			<resource name="souls" amount="-1000"/>
+									
+		</resources-stored>
+		<image path="images/head.bmp"/>
+		<image-cancel path="../lerod/icons/cancel.bmp"/>
+		<meeting-point value="true" image-path="../lerod/icons/meeting.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/sel.wav" />
+		</selection-sounds>
+		<command-sounds enabled="false"/>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+	
+	     <skill>
+			<type value="upgrade"/>	
+			<name value="upgrade_skill"/>	
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="60" />
+			<animation path="models/tonit_still.g3d" />
+			<sound enabled="false" />
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="20" />
+			<animation path="models/tonit_still.g3d" />
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="30" />
+			<animation path="construction/construct.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="350" />
+			<anim-speed value="100" />
+			<animation path="models/tonit_produce.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="30" />
+			<anim-speed value="10" />
+			<animation path="models/tonit_dead.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../tonit/sounds/fall1.wav"/>
+				<sound-file path="../tonit/sounds/fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+		<command>
+			<type value="produce"/>
+			<name value="lerod" />
+			<image path="../lerod/images/head.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="lerod"/>
+		</command>	
+
+
+
+	</commands>
+</unit>

@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+
+<tech-tree>
+	<description value="nihilirian rebirth"/>
+	<attack-types>
+		<attack-type name="melee"/>
+		<attack-type name="ballistic"/>
+		<attack-type name="blades"/>
+		<attack-type name="forcefield"/>
+		<attack-type name="explosions"/>		
+	</attack-types>
+	<armor-types>
+		<armor-type name="organic"/>
+		<armor-type name="alloy"/>
+		<armor-type name="carapace"/>
+		<armor-type name="toughskin"/>
+	</armor-types>
+	<damage-multipliers>
+		<damage-multiplier attack="ballistic" armor="organic" value="1"/>
+		<damage-multiplier attack="ballistic" armor="alloy" value="0.9"/> 
+		<damage-multiplier attack="ballistic" armor="toughskin" value="1.1"/>
+
+		<damage-multiplier attack="blades" armor="organic" value="1.1"/>
+		<damage-multiplier attack="blades" armor="alloy" value="0.9"/>
+		<damage-multiplier attack="blades"  armor="toughskin" value="1.1"/>
+
+		<damage-multiplier attack="forcefield"  armor="organic" value="0.9"/>
+		<damage-multiplier attack="forcefield"  armor="alloy" value="1.1"/>
+		<damage-multiplier attack="forcefield"  armor="carapace" value="1.1"/>
+		<damage-multiplier attack="forcefield"  armor="toughskin" value="1.1"/>
+
+		<damage-multiplier attack="explosions"  armor="organic" value="1.1"/> 
+		<damage-multiplier attack="explosions"  armor="alloy" value="1.1"/>
+		<damage-multiplier attack="explosions"  armor="toughskin" value="1.1"/>
+
+		<damage-multiplier attack="melee" armor="organic" value="1.1"/>
+		<damage-multiplier attack="melee" armor="alloy" value="0.9"/>
+		<damage-multiplier attack="melee"  armor="toughskin" value="1.1"/>	
+	</damage-multipliers>
+</tech-tree>
