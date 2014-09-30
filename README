@@ -9,11 +9,13 @@ $ cd ~/.megaglest/techs/
 Then clone this repository:
 $ git clone https://github.com/cathaur/nihilirian_rebalance.git
 
-Or you can put it somewhere else and make a symlink at
-  ~/.megaglest/techs/nihilirian_rebalance .
+(
+  Or you can put it somewhere else and make a symlink:
+  $ ln -s /path/to/cloned/repo ~/.megaglest/techs/nihilirian_rebalance
+)
 
 Since this repository contains only text files, you will need to copy
-the original Nihilirian assets over:
+  the original Nihilirian assets over.
 Assuming you have the original Nihilirian techtree at
   ~/.megaglest/techs/nihilirian, then:
 $ cd ~/.megaglest/techs/nihilirian_rebalance
