@@ -110,14 +110,14 @@
 
  		<command>
 			<type value="upgrade"/>
-			<name value="wistom_development" />
-			<image path="../../upgrades/wistom_development/images/icon.bmp" />
+			<name value="wisdom_development" />
+			<image path="../../upgrades/wisdom_development/images/icon.bmp" />
 			<unit-requirements />
 		<upgrade-requirements>
 			<upgrade name="ancient_wisdom"/>
 		</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
-			<produced-upgrade name="wistom_development"/>
+			<produced-upgrade name="wisdom_development"/>
 		</command>
 
  		<command>
