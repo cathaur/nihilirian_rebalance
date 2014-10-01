@@ -25,7 +25,7 @@
 		<resource-requirements>
 			<resource name="gold" amount="110" />
 			<resource name="stone" amount="10" />
-			<resource name="souls" amount="-7"/>
+			<resource name="souls" amount="-14"/>
 		</resource-requirements>
 		<resources-stored>
 			<resource name= "gold" amount="100"/>	
