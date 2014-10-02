@@ -14,7 +14,7 @@
 	</effects>
 	<max-hp value="30"/>
 	<max-ep value="100"/>
-	<sight value="1"/>
+	<sight value="2"/>
 	<attack-strenght value="5"/>
 	<attack-range value="2"/>
 	<armor value="1"/>

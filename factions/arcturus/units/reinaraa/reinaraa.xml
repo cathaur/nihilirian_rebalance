@@ -11,7 +11,7 @@
 		<max-ep value="100" regeneration="2"/>
 		<armor value="1"/>
 		<armor-type value="toughskin"/>					
-		<sight value="10"/>
+		<sight value="12"/>
 		<time value="90"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
