@@ -1,0 +1,13 @@
+This is a list of changes from the original.
+
+Balance changes:
+
+* Reduced the armor gain from the Artificial Shields upgrade from 10 to 1.
+   +10 armor made Automacer take almost no damage from Ordantte and Atir.
+
+* Double the souls produced by soul buildings.
+   It was annoying to have to make so many.  Also, this greatly improves CPU
+   player performance.
+
+Miscellaneous:
+* Corrected spelling of Wisdom Development
