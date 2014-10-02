@@ -14,9 +14,9 @@
 	</effects>
 	<max-hp value="0"/>
 	<max-ep value="0"/>
-	<sight value="5"/>
+	<sight value="1"/>
 	<attack-strenght value="0"/>
-	<attack-range value="3"/>
+	<attack-range value="1"/>
 	<armor value="0"/>
 	<move-speed value="1"/>
 	<production-speed value="0"/>
