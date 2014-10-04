@@ -7,12 +7,12 @@
 	<parameters>
 		<size value="1"/>
 		<height value="2"/>
-		<max-hp value="950" regeneration="5"/>
+		<max-hp value="710" regeneration="5"/>
 		<max-ep value="110" regeneration="4"/>
 		<armor value="3"/>
 		<armor-type value="toughskin"/>					
 		<sight value="15"/>
-		<time value="380"/>	
+		<time value="180"/>	
 		<multi-selection value="true"/>	
 		<cellmap value="false"/>
 		<levels/>
@@ -79,14 +79,14 @@
 			<type value="attack"/>
 			<name value="attack_skill"/>		
 			<ep-cost value="11"/>
-			<speed value="70"/>
-			<anim-speed value="70"/>
+			<speed value="75"/>
+			<anim-speed value="75"/>
 			<animation path="models/spiritea_attack.g3d"/>
 			<sound enabled="true" start-time="0.4">
 				<sound-file path="/sounds/attack0.wav"/>
 				
 			</sound>
-		<attack-strenght value="170"/>
+		<attack-strenght value="240"/>
 			<attack-var value="30"/>
 			<attack-range value="13"/>
 			<attack-type value="forcefield"/>
